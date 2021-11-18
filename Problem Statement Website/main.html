@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Dummy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.description').on({
+                'mouseenter': function () {
+                    $(this).children('.details, .sub-heading, .navigate').css({ "margin-top": "-1%", "transition": "0.8s" })
+                },
+                'mouseleave': function () {
+                    $(this).children('.details, .sub-heading, .navigate').css({ "margin-top": "+1%", "transition": "0.8s" })
+
+                }
+            })
+        })
+    </script>
+    <style>
+        :root {
+            --primary: #000100;
+            --box: #1b1b1b;
+            --green: #3ad34a;
+            --light: white;
+        }
+
+        body {
+            background-color: var(--primary);
+        }
+
+
+
+        h1,
+        h2 {
+            color: var(--green);
+            font-family: Oswald;
+        }
+
+        /* h2 {
+            color: var(--light);
+            font-family: Oswald;
+        } */
+
+        h1 {
+            /* text-align: center; */
+            font-size: 500%;
+        }
+
+        h2 {
+            font-size: 200%;
+            margin: 0.5em 0;
+        }
+
+        p {
+            font-family: 'Open Sans';
+        }
+
+        .description,
+        .image,
+        .details {
+            padding: 1%;
+        }
+
+        .h1,
+        .logo {
+            padding: 0% 10%;
+        }
+
+        .heading img {
+            width: 60%;
+            height: auto;
+            flex: 1;
+        }
+
+        .logo img {
+            width: 50%;
+            margin-top: +7%;
+            height: auto;
+            flex: 1;
+
+        }
+
+        .header {
+            padding-top: 2%;
+            display: flex;
+
+        }
+
+
+        .statements {
+            padding: 0% 2%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+
+        @media(min-width:600px) {
+            .heading {
+                flex: 3;
+            }
+
+            .about {
+                display: flex;
+                align-items: center;
+            }
+
+            .description {
+                flex: 1.25;
+                margin-left: -40%;
+            }
+
+
+        }
+
+        @media(max-width:768px) {
+            .header {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .logo {
+                transform: scale(0.6)
+            }
+
+
+            .about {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .heading {
+                text-align: center;
+            }
+
+            .description {
+
+                flex: 1.25;
+                order: 2;
+            }
+
+
+
+        }
+
+        .heading {
+            order: 2;
+            flex: 2;
+        }
+
+        .image {
+            flex: 0.9;
+        }
+
+        .description {
+            background-color: var(--box);
+            margin: 0.5%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 2%;
+        }
+
+        .about {
+            transition: 0.4s;
+            padding: 2% 0;
+            height: 40%;
+
+        }
+
+        .about:hover {
+            /* background-color: var(--green); */
+            /* transform: scale(1.01); */
+            /* margin-top: -2%; */
+        }
+
+        .description:hover {
+            /* margin-top: -2%; */
+        }
+
+        .details {
+            /* background-color: var(--box); */
+            color: var(--light);
+            /* padding: 5%; */
+        }
+
+        .description {
+            border-radius: 2%;
+            padding: 2rem;
+        }
+
+        .button {
+            width: 20%;
+            padding: 1% 3%;
+            margin: 2% 0%;
+            border: 1px solid var(--green);
+            background-color: var(--box);
+            color: var(--green);
+            font-size: 120%;
+            /* border-bottom-left-radius: 10%;
+            border-top-right-radius: 10%; */
+            /* border-radius: 0%; */
+            transition: 0.4s;
+        }
+
+        .button:hover {
+            color: white;
+            background-color: var(--green);
+            transform: scale(1.05);
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="heading">
+                <img src="Assets/images/ecohack.png" alt="ecoHack">
+            </div>
+            <div class="logo">
+                <a href="https:/www.ssitvit.tech">
+                    <img src="./Assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+        </div>
+        <hr style="background-color: var(--green);width:95%;border:4px">
+        <div class="statements">
+            <div class="about">
+                <div class="description">
+                    <div class="sub-heading">
+                        <h2>Domain1</h2>
+                    </div>
+                    <div class="details">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro quo architecto quos
+                            omnis facere assumenda eveniet, culpa corporis beatae cumque illo modi veritatis reiciendis
+                            repellendus error earum unde ullam nobis dolor amet. Eligendi asperiores rerum, expedita
+                            animi ratione aspernatur! Et, quod quos quae placeat vitae repellendus debitis perferendis
+                            incidunt!
+                        </p>
+                    </div>
+                    <div class="navigate">
+                        <form action="Domain1.html">
+                            <button class="button">Click</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="Assets/images/img2.jpg" alt="img1">
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="image">
+                <img src="Assets/images/img2.jpg" alt="img1">
+            </div>
+            <div class="description">
+                <div class="sub-heading">
+                    <h2>Domain2</h2>
+                </div>
+                <div class="details">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quo ab tempore maiores
+                        voluptates pariatur nesciunt accusamus? Soluta quibusdam consectetur, et vitae eaque libero
+                        voluptatibus nobis pariatur non sit corrupti quaerat adipisci vero obcaecati corporis voluptas
+                        quo sequi natus in aspernatur, ut dolores alias magnam? Incidunt facere quisquam ad quos.
+
+                    </p>
+                </div>
+                <div class="navigate">
+                    <form action="Domain2.html">
+                        <button class="button">Click</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="description">
+                <div class="sub-heading">
+                    <h2>Domain3</h2>
+                </div>
+                <div class="details">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sapiente corporis aliquam
+                        dolores tempore at culpa ipsa sint sunt amet maxime distinctio incidunt id, officiis delectus
+                        veniam voluptas atque eius molestias vel? Corporis illum vel est molestias suscipit dignissimos
+                        minus culpa consequuntur ad dolorem quasi accusantium, repellat velit dolorum nesciunt.
+
+                    </p>
+                </div>
+                <div class="navigate">
+                    <form action="Domain3.html">
+                        <button class="button">Click</button>
+                    </form>
+                </div>
+            </div>
+            <div class="image">
+                <img src="Assets/images/img2.jpg" alt="img1">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
