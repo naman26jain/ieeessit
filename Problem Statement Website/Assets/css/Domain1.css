@@ -30,7 +30,7 @@ body {
 
 .title {
   color: var(--green);
-  font-size: 3em;
+  font-size: 2.4em;
 }
 
 .container {
@@ -63,6 +63,8 @@ body {
 
 .logo img {
   margin-left: 10%;
+  height: fit-content;
+  width: 13rem;
 }
 
 img {
@@ -104,7 +106,9 @@ img {
 
   .logo img {
     /* flex: 0.2; */
-    width: 35%;
+    width: 70%;
+    margin-right: 20px;
+    margin-left: 0%;
   }
 
   .title {
